@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AvtoSalon — Cobalt, Gentra, Onix, Tracker</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. HEADER VA MENYU -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">AVTO SALON</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Menyuni ochish">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html#modellar">Modellar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#jadval">Narxlar jadvali</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html?view=video" target="_blank" rel="noopener noreferrer">Videorolik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="katalog.pdf" target="_blank" rel="noopener noreferrer">Katalog</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-warning fw-bold text-dark px-3" href="index.html?view=buy&model=Cobalt" target="_blank" rel="noopener noreferrer">Sotib olish</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container header-content text-center">
+      <h1 id="pageMainTitle">Zamonaviy Avtomobillar Markazi</h1>
+      <div id="headerButtons" class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+        <a href="#modellar" class="btn btn-warning btn-lg fw-bold text-dark px-4">Modellarni ko‘rish</a>
+        <a href="katalog.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg px-4">Katalog</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. ANIMATSIYALI BANNER -->
+  <div class="animated-banner">
+    Maxsus taklif: Cobalt, Gentra, Onix va Tracker modellari uchun qulay shartlar!
+  </div>
+
+  <!-- =========================================================
+  ========================================================== -->
+  <main id="homeView" class="container custom-main">
+
+    <!-- MODELLAR BO'LIMI -->
+    <section id="modellar" class="mb-5">
+      <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+        <h2 class="section-title mb-0">Avtomobil Modellari va Narxlari</h2>
+        <span class="badge bg-primary fs-6">4 ta model</span>
+      </div>
+
+      <div class="row g-4 mt-1">
+
+        <!-- COBALT -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card car-card">
+            <div class="position-relative car-img-box">
+              <img src="cobalt.jpg" class="car-image" alt="Cobalt">
+              <span class="badge bg-success position-absolute top-0 end-0 m-2">Cobalt</span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <h5 class="card-title mb-0">Cobalt</h5>
+                <small class="text-muted">Sedan</small>
+              </div>
+              <p class="fw-bold text-primary fs-5 mb-2">146 455 000 so‘m</p>
+              <p class="card-text">
+                Keng salon va kundalik yurishga mos qulay sedan.
+              </p>
+              <div class="d-grid gap-2 mt-auto">
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalCobalt">
+                  Batafsil ma’lumot
+                </button>
+                <a href="index.html?view=buy&model=Cobalt" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  Sotib olish
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GENTRA -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card car-card">
+            <div class="position-relative car-img-box">
+              <img src="Gentra.jpg" class="car-image" alt="Gentra">
+              <span class="badge bg-dark position-absolute top-0 end-0 m-2">Gentra</span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <h5 class="card-title mb-0">Gentra</h5>
+                <small class="text-muted">Sedan</small>
+              </div>
+              <p class="fw-bold text-primary fs-5 mb-2">169 118 000 so‘m</p>
+              <p class="card-text">
+                Yumshoq yurish qismi va qulay boshqaruvga ega model.
+              </p>
+              <div class="d-grid gap-2 mt-auto">
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalGentra">
+                  Batafsil ma’lumot
+                </button>
+                <a href="index.html?view=buy&model=Gentra" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  Sotib olish
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONIX -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card car-card">
+            <div class="position-relative car-img-box">
+              <img src="onix.jpg" class="car-image" alt="Onix">
+              <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Onix</span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <h5 class="card-title mb-0">Onix</h5>
+                <small class="text-muted">Sedan</small>
+              </div>
+              <p class="fw-bold text-primary fs-5 mb-2">176 900 000 so‘m</p>
+              <p class="card-text">
+                Zamonaviy ko‘rinish va tejamkor dvigatelga ega avtomobil.
+              </p>
+              <div class="d-grid gap-2 mt-auto">
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalOnix">
+                  Batafsil ma’lumot
+                </button>
+                <a href="index.html?view=buy&model=Onix" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  Sotib olish
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRACKER -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card car-card">
+            <div class="position-relative car-img-box">
+              <img src="Tracker.jpg" class="car-image" alt="Tracker">
+              <span class="badge bg-danger position-absolute top-0 end-0 m-2">Tracker</span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <h5 class="card-title mb-0">Tracker</h5>
+                <small class="text-muted">Krossover</small>
+              </div>
+              <p class="fw-bold text-primary fs-5 mb-2">215 951 000 so‘m</p>
+              <p class="card-text">
+                Shahar va uzoq safarlar uchun qulay krossover.
+              </p>
+              <div class="d-grid gap-2 mt-auto">
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalTracker">
+                  Batafsil ma’lumot
+                </button>
+                <a href="index.html?view=buy&model=Tracker" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  Sotib olish
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- NARXLAR JADVALI -->
+    <section id="jadval" class="mt-5 mb-2">
+      <h2 class="section-title">Narxlar va Ko‘rsatkichlar Jadvali</h2>
+      <div class="table-responsive rounded border">
+        <table class="table table-hover table-striped align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Model</th>
+              <th>Kuzov turi</th>
+              <th>Dvigatel</th>
+              <th>Narxi</th>
+              <th>Harakat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-bold">Cobalt</td>
+              <td>Sedan</td>
+              <td>1.5L (106 ot kuchi)</td>
+              <td class="fw-bold text-success">146 455 000 so‘m</td>
+              <td>
+                <a href="index.html?view=buy&model=Cobalt" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Sotib olish</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fw-bold">Gentra</td>
+              <td>Sedan</td>
+              <td>1.5L (107 ot kuchi)</td>
+              <td class="fw-bold text-success">169 118 000 so‘m</td>
+              <td>
+                <a href="index.html?view=buy&model=Gentra" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Sotib olish</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fw-bold">Onix</td>
+              <td>Sedan</td>
+              <td>1.2L Turbo (132 ot kuchi)</td>
+              <td class="fw-bold text-success">176 900 000 so‘m</td>
+              <td>
+                <a href="index.html?view=buy&model=Onix" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Sotib olish</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fw-bold">Tracker</td>
+              <td>Krossover</td>
+              <td>1.2L Turbo (132 ot kuchi)</td>
+              <td class="fw-bold text-success">215 951 000 so‘m</td>
+              <td>
+                <a href="index.html?view=buy&model=Tracker" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Sotib olish</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+  ========================================================== -->
+  <main id="buyView" class="container custom-main d-none">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+      <h2 class="section-title mb-0">Avtomobil Sotib Olish</h2>
+      <a href="index.html" class="btn btn-outline-secondary btn-sm">← Asosiy sahifaga qaytish</a>
+    </div>
+
+    <div class="row g-4 align-items-center mb-5">
+      <div class="col-md-5">
+        <div class="car-img-box rounded shadow-sm" style="height: 240px; min-height: 240px; max-height: 240px;">
+          <img id="selectedCarImg" src="cobalt.jpg" class="car-image" alt="Tanlangan avtomobil">
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h3 class="fw-bold" style="color: #173d70;" id="selectedCarTitle">Cobalt</h3>
+        <p class="fs-4 fw-bold text-primary mb-2" id="selectedCarPrice">146 455 000 so‘m</p>
+        <p class="text-muted mb-3" id="selectedCarDesc">
+          Keng salon va kundalik yurishga mos qulay sedan.
+        </p>
+        <div class="d-flex gap-2 flex-wrap">
+          <button type="button" class="btn btn-outline-primary btn-sm" onclick="changeCar('Cobalt')">Cobalt</button>
+          <button type="button" class="btn btn-outline-primary btn-sm" onclick="changeCar('Gentra')">Gentra</button>
+          <button type="button" class="btn btn-outline-primary btn-sm" onclick="changeCar('Onix')">Onix</button>
+          <button type="button" class="btn btn-outline-primary btn-sm" onclick="changeCar('Tracker')">Tracker</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="order" class="p-4 rounded-3 border bg-light">
+      <h4 class="fw-bold mb-3" style="color: #173d70;">Buyurtma ma’lumotlari</h4>
+      <form id="buyForm" onsubmit="submitBuy(event)">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="fullName" class="form-label">Ism va familiya *</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Ismingizni kiriting" required>
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Telefon raqam *</label>
+            <input type="tel" class="form-control" id="phone" placeholder="+998 90 000 00 00" required>
+          </div>
+          <div class="col-md-6">
+            <label for="carModel" class="form-label">Avtomobil modeli *</label>
+            <select class="form-select" id="carModel" onchange="changeCar(this.value)" required>
+              <option value="Cobalt">Cobalt — 146 455 000 so‘m</option>
+              <option value="Gentra">Gentra — 169 118 000 so‘m</option>
+              <option value="Onix">Onix — 176 900 000 so‘m</option>
+              <option value="Tracker">Tracker — 215 951 000 so‘m</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="paymentType" class="form-label">To‘lov turi *</label>
+            <select class="form-select" id="paymentType" required>
+              <option value="To‘liq to‘lov (100%)">To‘liq to‘lov (100%)</option>
+              <option value="Muddatli to‘lov (50%)">Muddatli to‘lov (50%)</option>
+              <option value="Avtokredit">Avtokredit</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary text-white">Buyurtmani tasdiqlash</button>
+          </div>
+        </div>
+        <div id="buyResult" class="alert alert-success mt-3 d-none mb-0"></div>
+      </form>
+    </div>
+  </main>
+
+  <!-- =========================================================
+  ========================================================== -->
+  <main id="videoView" class="container custom-main d-none">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+      <h2 class="section-title mb-0">Reklama Video</h2>
+      <a href="index.html" class="btn btn-outline-secondary btn-sm">← Asosiy sahifaga qaytish</a>
+    </div>
+
+    <div class="video-container">
+      <video controls preload="metadata">
+        <source src="Reklama.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <hr>
+
+    <h3 class="section-title mt-4"> Modellar</h3>
+    <div class="row g-3 mt-1">
+      <div class="col-6 col-md-3">
+        <div class="car-img-box rounded">
+          <img src="cobalt.jpg" class="car-image" alt="Cobalt">
+        </div>
+        <p class="text-center fw-bold mt-2 mb-1">Cobalt</p>
+        <div class="text-center">
+          <a href="index.html?view=buy&model=Cobalt" class="btn btn-primary btn-sm">Sotib olish</a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="car-img-box rounded">
+          <img src="Gentra.jpg" class="car-image" alt="Gentra">
+        </div>
+        <p class="text-center fw-bold mt-2 mb-1">Gentra</p>
+        <div class="text-center">
+          <a href="index.html?view=buy&model=Gentra" class="btn btn-primary btn-sm">Sotib olish</a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="car-img-box rounded">
+          <img src="onix.jpg" class="car-image" alt="Onix">
+        </div>
+        <p class="text-center fw-bold mt-2 mb-1">Onix</p>
+        <div class="text-center">
+          <a href="index.html?view=buy&model=Onix" class="btn btn-primary btn-sm">Sotib olish</a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="car-img-box rounded">
+          <img src="Tracker.jpg" class="car-image" alt="Tracker">
+        </div>
+        <p class="text-center fw-bold mt-2 mb-1">Tracker</p>
+        <div class="text-center">
+          <a href="index.html?view=buy&model=Tracker" class="btn btn-primary btn-sm">Sotib olish</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODALLAR (FAQAT 4 TA MODEL) -->
+  <div class="modal fade" id="modalCobalt" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Cobalt</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Yopish"></button>
+        </div>
+        <div class="modal-body">
+          <img src="cobalt.jpg" class="img-fluid rounded mb-3" alt="Cobalt">
+          <h5 class="text-primary fw-bold">Narxi: 146 455 000 so‘m</h5>
+          <ul class="list-group list-group-flush mt-2">
+            <li class="list-group-item"><strong>Dvigatel:</strong> 1.5L (106 ot kuchi)</li>
+            <li class="list-group-item"><strong>Uzatmalar qutisi:</strong> 6 pog‘onali avtomat</li>
+            <li class="list-group-item"><strong>Kuzov:</strong> Sedan</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+          <a href="index.html?view=buy&model=Cobalt" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sotib olish</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGentra" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Gentra</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Yopish"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Gentra.jpg" class="img-fluid rounded mb-3" alt="Gentra">
+          <h5 class="text-primary fw-bold">Narxi: 169 118 000 so‘m</h5>
+          <ul class="list-group list-group-flush mt-2">
+            <li class="list-group-item"><strong>Dvigatel:</strong> 1.5L (107 ot kuchi)</li>
+            <li class="list-group-item"><strong>Uzatmalar qutisi:</strong> 6 pog‘onali avtomat</li>
+            <li class="list-group-item"><strong>Kuzov:</strong> Sedan</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+          <a href="index.html?view=buy&model=Gentra" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sotib olish</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalOnix" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Onix</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Yopish"></button>
+        </div>
+        <div class="modal-body">
+          <img src="onix.jpg" class="img-fluid rounded mb-3" alt="Onix">
+          <h5 class="text-primary fw-bold">Narxi: 176 900 000 so‘m</h5>
+          <ul class="list-group list-group-flush mt-2">
+            <li class="list-group-item"><strong>Dvigatel:</strong> 1.2L Turbo (132 ot kuchi)</li>
+            <li class="list-group-item"><strong>Uzatmalar qutisi:</strong> 6 pog‘onali avtomat</li>
+            <li class="list-group-item"><strong>Kuzov:</strong> Sedan</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+          <a href="index.html?view=buy&model=Onix" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sotib olish</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalTracker" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Tracker</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Yopish"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Tracker.jpg" class="img-fluid rounded mb-3" alt="Tracker">
+          <h5 class="text-primary fw-bold">Narxi: 215 951 000 so‘m</h5>
+          <ul class="list-group list-group-flush mt-2">
+            <li class="list-group-item"><strong>Dvigatel:</strong> 1.2L Turbo (132 ot kuchi)</li>
+            <li class="list-group-item"><strong>Uzatmalar qutisi:</strong> 6 pog‘onali avtomat</li>
+            <li class="list-group-item"><strong>Kuzov:</strong> Krossover</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+          <a href="index.html?view=buy&model=Tracker" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sotib olish</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. FOOTER -->
+  <footer class="text-center">
+    <div class="container">
+      <p>© 2026 AvtoSalon — Shukurov Nodirbek veb-sayt</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const carsData = {
+      Cobalt: {
+        img: "cobalt.jpg",
+        price: "146 455 000 so‘m",
+        desc: "Keng salon va kundalik yurishga mos qulay sedan (1.5L, 6 pog‘onali avtomat)."
+      },
+      Gentra: {
+        img: "Gentra.jpg",
+        price: "169 118 000 so‘m",
+        desc: "Yumshoq yurish qismi va qulay boshqaruvga ega model (1.5L, 6 pog‘onali avtomat)."
+      },
+      Onix: {
+        img: "onix.jpg",
+        price: "176 900 000 so‘m",
+        desc: "Zamonaviy ko‘rinish va tejamkor dvigatelga ega avtomobil (1.2L Turbo)."
+      },
+      Tracker: {
+        img: "Tracker.jpg",
+        price: "215 951 000 so‘m",
+        desc: "Shahar va uzoq safarlar uchun qulay krossover (1.2L Turbo)."
+      }
+    };
+
+    function changeCar(modelName) {
+      const validName = carsData[modelName] ? modelName : "Cobalt";
+      const car = carsData[validName];
+      document.getElementById("selectedCarTitle").textContent = validName;
+      document.getElementById("selectedCarPrice").textContent = car.price;
+      document.getElementById("selectedCarDesc").textContent = car.desc;
+      document.getElementById("selectedCarImg").src = car.img;
+      document.getElementById("selectedCarImg").alt = validName;
+      document.getElementById("carModel").value = validName;
+    }
+
+    function submitBuy(e) {
+      e.preventDefault();
+      const name = document.getElementById("fullName").value;
+      const phone = document.getElementById("phone").value;
+      const model = document.getElementById("carModel").value;
+      const payment = document.getElementById("paymentType").value;
+      const box = document.getElementById("buyResult");
+      box.innerHTML = `<strong>${name}</strong>, <strong>${model}</strong> (${payment}) bo‘yicha so‘rovingiz qabul qilindi. Bog‘lanish raqami: <strong>${phone}</strong>.`;
+      box.classList.remove("d-none");
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const view = params.get("view");
+
+    if (view === "buy") {
+      document.getElementById("homeView").classList.add("d-none");
+      document.getElementById("buyView").classList.remove("d-none");
+      document.getElementById("pageMainTitle").textContent = "Avtomobil Sotib Olish";
+      document.getElementById("headerButtons").classList.add("d-none");
+      changeCar(params.get("model") || "Cobalt");
+    } else if (view === "video") {
+      document.getElementById("homeView").classList.add("d-none");
+      document.getElementById("videoView").classList.remove("d-none");
+      document.getElementById("pageMainTitle").textContent = "Videorolik";
+      document.getElementById("headerButtons").classList.add("d-none");
+    }
+  </script>
+</body>
+</html>

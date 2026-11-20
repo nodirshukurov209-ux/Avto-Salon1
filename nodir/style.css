@@ -1,0 +1,463 @@
+/* =====================================
+   1. UMUMIY SOZLAMALAR
+===================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    background-color: #f4f7f6;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+/* =====================================
+   2. HEADER VA NAVBAR
+===================================== */
+header {
+    background: linear-gradient(135deg, #173d70, #315b96);
+    color: #ffffff;
+    width: 100%;
+    padding-bottom: 38px;
+}
+
+header .navbar {
+    background: transparent !important;
+    padding: 18px 0;
+}
+
+header .navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+header .navbar-nav {
+    gap: 10px;
+}
+
+header .navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 12px !important;
+    transition: color 0.3s ease;
+}
+
+header .navbar-nav .nav-link:hover,
+header .navbar-nav .nav-link.active {
+    color: #ffc107 !important;
+}
+
+header .navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+header .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+/* =====================================
+   3. HEADER SARLAVHASI
+===================================== */
+.header-content {
+    padding: 30px 15px 15px;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 18px;
+    color: #f1f1f1;
+    margin-bottom: 0;
+}
+
+/* =====================================
+   4. ANIMATSIYALI BANNER
+===================================== */
+.animated-banner {
+    background-color: #ffc107;
+    color: #111111;
+    text-align: center;
+    padding: 14px 10px;
+    font-size: 17px;
+    font-weight: 700;
+    width: 100%;
+    animation: bannerPulse 2s infinite alternate;
+}
+
+@keyframes bannerPulse {
+    from {
+        background-color: #ffc107;
+    }
+    to {
+        background-color: #ffda55;
+    }
+}
+
+/* =====================================
+   5. ASOSIY KONTEYNER VA BO'LIMLAR
+===================================== */
+main.custom-main {
+    background-color: #ffffff;
+    max-width: 1320px;
+    margin: 25px auto 30px;
+    padding: 35px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    color: #123967;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 22px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #ffc107;
+}
+
+main p,
+main li {
+    font-size: 16px;
+    color: #222222;
+}
+
+main hr {
+    border: none;
+    height: 1px;
+    background-color: #d8d8d8;
+    margin: 24px 0;
+}
+
+/* =====================================
+   6. AVTOMOBIL MODELLARI RO'YXATI
+===================================== */
+.model-list {
+    padding-left: 26px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.model-list li {
+    padding: 4px 0;
+    font-size: 16px;
+}
+
+.model-list strong {
+    color: #173d70;
+}
+
+/* =====================================
+   7. AVTOMOBIL KARTALARI (BIR TEKIS)
+===================================== */
+.car-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.17);
+}
+
+/* Barcha avtomobil rasmlari qat'iy bir xil balandlikda */
+.car-img-box {
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: #eef2f5;
+}
+
+.car-image {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+.car-card .card-body {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.car-card .card-title {
+    color: #173d70;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.car-card .card-text {
+    color: #555555;
+    font-size: 14.5px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.car-card .btn {
+    font-weight: 600;
+    border-radius: 7px;
+    padding: 9px 12px;
+}
+
+/* =====================================
+   8. TEXNIK KO'RSATKICHLAR JADVALI
+===================================== */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.table th,
+.table td {
+    text-align: center;
+    padding: 13px;
+    color: #222222;
+}
+
+.table th {
+    white-space: nowrap;
+    padding: 14px;
+}
+
+/* =====================================
+   9. VIDEO VA KATALOG
+===================================== */
+.video-container {
+    width: 100%;
+    max-width: 650px;
+    margin: 25px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #000000;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: contain;
+}
+
+#docs .btn {
+    padding: 12px 22px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#docs .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* =====================================
+   10. BUYURTMA FORMASI
+===================================== */
+#order {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#order .form-label {
+    color: #173d70;
+    font-weight: 600;
+}
+
+#order .form-control,
+#order .form-select {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+#order .form-control:focus,
+#order .form-select:focus {
+    border-color: #315b96;
+    box-shadow: 0 0 0 3px rgba(49, 91, 150, 0.15);
+}
+
+#order textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#order button[type="submit"] {
+    background-color: #173d70;
+    border: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#order button[type="submit"]:hover {
+    background-color: #315b96;
+    transform: translateY(-2px);
+}
+
+/* =====================================
+   11. FOOTER
+===================================== */
+footer {
+    background-color: #173d70;
+    color: #ffffff;
+    padding: 22px 10px;
+    font-size: 15px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+}
+
+/* =====================================
+   12. MOSLASHUV (TABLET VA TELEFON)
+===================================== */
+@media (max-width: 991px) {
+    header .navbar-nav {
+        gap: 0;
+        padding-top: 10px;
+    }
+
+    header .navbar-nav .nav-link {
+        padding: 9px 5px !important;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+    }
+
+    main.custom-main {
+        padding: 25px 20px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 15px;
+    }
+
+    header .navbar {
+        padding: 12px 10px;
+    }
+
+    header .navbar-brand {
+        font-size: 23px;
+    }
+
+    .header-content {
+        padding: 25px 12px;
+    }
+
+    .header-content h1 {
+        font-size: 25px;
+    }
+
+    .header-content p {
+        font-size: 15px;
+    }
+
+    .animated-banner {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    main.custom-main {
+        width: calc(100% - 20px);
+        margin: 15px auto;
+        padding: 20px 14px;
+        border-radius: 9px;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .model-list li {
+        font-size: 14px;
+    }
+
+    .car-img-box {
+        height: 190px;
+        min-height: 190px;
+        max-height: 190px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .video-container {
+        max-width: 100%;
+        margin: 15px auto;
+    }
+
+    .video-container video {
+        max-height: 250px;
+    }
+
+    #order button[type="submit"] {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
